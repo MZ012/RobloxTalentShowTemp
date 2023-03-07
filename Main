@@ -33,7 +33,7 @@ local function checkforstaff()
 		if v:GetRankInGroup(2794002) >= 13 then 
 			Exploiter:kick("Staff Detected")
 		else
-			print(v.. "Harmless")
+			print("Harmless")
 		end
 	end
 end
