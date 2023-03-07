@@ -20,6 +20,7 @@ end
 
 local function jsond(str)
     return http:JSONDecode(str)
+    print("temp")
 end
 
 local function jsond(str)
