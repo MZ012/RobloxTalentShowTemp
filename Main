@@ -28,7 +28,18 @@ local function jsond(str)
     return http:JSONDecode(str)
 end
 
+local function checkforstaff()
+	for i,v in pairs(game.Players:GetChildren()) do
+		if v:GetRankInGroup(2794002) >= 13 then 
+			Exploiter:kick("Staff Detected")
+		else
+			print(v.. "Harmless")
+		end
+	end
+end
+
 local function collectrep(BasePart)
+checkforstaff()
     local Teleport = tostring(BasePart:WaitForChild("Teleport").Value)
     local TeleportBasePart = Teleports:WaitForChild(Teleport)
     local debounce = 0
