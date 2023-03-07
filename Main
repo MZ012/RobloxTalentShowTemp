@@ -67,7 +67,7 @@ while cursor and #servers == 0 do
     task.wait()
 end
 
-queueteleport([[loadstring(game:HttpGet('https://pastebin.com/8x7VVYkM'))()]])
+queueteleport([[loadstring(game:HttpGet('https://raw.githubusercontent.com/MZ012/RobloxTalentShowTemp/main/Main'))()]])
 
 while #servers > 0 do
     TeleportService:TeleportToPlaceInstance(PlaceId, servers[math.random(1, #servers)], lp)
